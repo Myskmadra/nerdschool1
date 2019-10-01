@@ -1,0 +1,25 @@
+{
+  "name": "nerdschool1",
+  "version": "1.0.0",
+  "description": "Exercise 1 1/10/2019",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myskmadra/nerdschool1.git"
+  },
+  "keywords": [
+    "rest",
+    "http",
+    "web",
+    "fun"
+  ],
+  "author": "Martin Rippin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myskmadra/nerdschool1/issues"
+  },
+  "homepage": "https://github.com/Myskmadra/nerdschool1#readme"
+}
