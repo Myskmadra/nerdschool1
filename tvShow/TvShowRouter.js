@@ -9,4 +9,11 @@ tvShowRouter.get('/', (req, res) => {
   res.json(TvShowService.getAll());
 });
 
+tvShowRouter.get('/:tvShowId', (req, res) => {
+  const tvShowId = req.params.tvShowId;
+  const tvShow = TvShowService.getById(tvShowId);
+  console.log(`Fetching TV Show with id: ${tvShowId}`);
+  res.json(tvShow);
+});
+
 module.exports = tvShowRouter;

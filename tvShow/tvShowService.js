@@ -1,10 +1,14 @@
+const TvShow = require('./TvShow');
+
 class TvShowService {
   constructor() {
-    this.tvShows = [];
+    this.tvShows = [new TvShow(1, 'Mr.Robot', 'Drama'), new TvShow(2, 'Black Mirror', 'Drama'), new TvShow(3, 'Mindhunter', 'Thriller')];
   }
-  // (You didn't copy & paste this, did you?)
   getAll() {
     return this.tvShows;
+  }
+  getById(id) {
+    return this.tvShows.find(show => show.id == id);
   }
 }
 module.exports = new TvShowService();
